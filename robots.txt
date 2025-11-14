@@ -1,0 +1,18 @@
+# ✅ 주요 크롤러 허용
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# ✅ 나머지 모든 크롤러
+User-agent: *
+Allow: /
+
+# ❌ 비공개·관리용 디렉토리 차단 (있을 때만 유지)
+Disallow: /admin/
+Disallow: /test/
+Disallow: /private/
+
+# ✅ Sitemap 위치
+Sitemap: https://www.badzkitchen.com/sitemap.xml

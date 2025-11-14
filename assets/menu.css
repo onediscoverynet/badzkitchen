@@ -1,0 +1,176 @@
+
+:root{--bg:#0c2a14;--card:#102e17;--accent:#d4af37;--text:#f6f6f6}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:linear-gradient(140deg,#0c2a14 0%,#0e2013 100%);color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.logo{font-weight:700;font-size:22px;letter-spacing:.5px}
+.nav a{color:#cfe8d1;text-decoration:none;margin-left:14px}
+.card{background:rgba(16,46,23,.85);border:1px solid rgba(212,175,55,.25);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.2);overflow:hidden}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:22px;padding:22px}
+.hero img{width:100%;border-radius:16px;display:block}
+.badges{display:flex;gap:10px;flex-wrap:wrap}
+.badge{background:rgba(212,175,55,.15);border:1px solid rgba(212,175,55,.4);color:#f7e7a0;padding:6px 10px;border-radius:999px;font-size:12px}
+.price{font-size:36px;color:#f7e7a0;font-weight:800;margin:6px 0}
+.cta{display:flex;gap:12px;margin-top:8px;flex-wrap:wrap}
+.btn{padding:12px 16px;border-radius:12px;border:1px solid rgba(212,175,55,.5);background:linear-gradient(180deg,rgba(212,175,55,.3),rgba(212,175,55,.15));color:#fff;text-decoration:none;font-weight:700}
+.btn.secondary{background:transparent}
+h1{font-size:40px;margin:0 0 6px 0;color:#fff}
+p{line-height:1.6;color:#d9e6db}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.tile{background:rgba(16,46,23,.8);border:1px solid rgba(212,175,55,.25);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.tile img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.tile .body{padding:14px}
+.tile h3{margin:0 0 8px 0}
+small, .muted{color:#aecbb2}
+.footer{opacity:.7;text-align:center;padding:20px}
+@media(max-width:800px){.hero{grid-template-columns:1fr} h1{font-size:32px}.price{font-size:30px}}
+
+
+#chat-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1877f2;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+  transition: background 0.3s;
+}
+#chat-float:hover {
+  background: #145dbf;
+}
+
+
+/* Chat Us inline button fix */
+.btn.chat{
+  display:inline-block;
+  background: linear-gradient(180deg,#1877f2,#145dbf);
+  color:#fff;
+  padding:12px 18px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  border: none;
+}
+.btn.chat:hover{ background:#0f4aa1; color:#fff;}
+
+/* Floating Chat button visibility fix */
+#chat-float{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#1877f2;
+  color:#fff;
+  padding:14px 20px;
+  border-radius:50px;
+  font-weight:700;
+  text-decoration:none;
+  box-shadow:0 6px 16px rgba(0,0,0,.35);
+  z-index:999999; /* ensure always on top */
+}
+#chat-float:hover{ background:#145dbf;}
+
+
+#chat-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #1877f2;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,.35);
+  z-index: 999999;
+}
+#chat-float:hover { background:#145dbf; }
+
+
+/* About page rebrand */
+.hero-brand {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 12px 0 20px;
+  border: 1px solid rgba(212,175,55,.25);
+  background:#102e17;
+}
+.hero-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.85);
+}
+.hero-brand .tagline {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  text-shadow: 0 4px 20px rgba(0,0,0,.4);
+}
+.section {
+  background: rgba(16,46,23,.85);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 18px;
+}
+.section h2 { margin-top: 0; }
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 16px;
+}
+.milestone {
+  background: rgba(12,42,20,.7);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 14px;
+  padding: 16px;
+}
+.milestone h3 { margin: 0 0 8px 0; }
+.reviews { display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap:14px;}
+.review { background: rgba(12,42,20,.7); border:1px solid rgba(212,175,55,.25); border-radius:14px; padding:14px;}
+.breadcrumb {margin: 4px 0 12px; opacity:.9;}
+.breadcrumb a{color:#cfe8d1; text-decoration:none;}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.logo{font-weight:700;font-size:22px}
+.nav a{color:#cfe8d1;text-decoration:none;margin-left:14px}
+
+
+/* Home brand story block */
+.brand-story {
+  background: rgba(16,46,23,.88);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 18px;
+  padding: 22px;
+  margin: 16px 0;
+}
+.brand-story h2{margin:0 0 8px 0}
+.brand-story p{margin:0 0 10px 0}
+.brand-cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:6px;}
+.brand-cta .btn{padding:12px 16px;border-radius:12px;border:1px solid rgba(212,175,55,.5);text-decoration:none;color:#fff}
+.brand-cta .btn.primary{background:linear-gradient(180deg,rgba(212,175,55,.3),rgba(212,175,55,.15))}
+
+
+/* Ensure hero images render correctly */
+.hero-cover,.hero-brand{height:360px; overflow:hidden; border-radius:18px}
+.hero-cover .cover-img,.hero-brand img{width:100%; height:100%; object-fit:cover; display:block}
+
+
+/* About hero cover and logo badge */
+.hero-brand{position:relative;height:360px;overflow:hidden;border-radius:18px;border:1px solid rgba(212,175,55,.25);background:#0e2a17}
+.hero-brand img{width:100%;height:100%;object-fit:cover;display:block}
+.cover-logo-top{position:absolute;top:16px;left:16px;background:rgba(255,255,255,.9);border-radius:50%;padding:8px;box-shadow:0 4px 16px rgba(0,0,0,.25)}
+.cover-logo-top img{width:64px;height:64px;display:block}
+.hero-brand .tagline{position:absolute;bottom:24px;left:24px;color:#fff;font-size:40px;font-weight:800;text-shadow:0 4px 18px rgba(0,0,0,.45)}

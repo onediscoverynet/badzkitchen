@@ -1,0 +1,23 @@
+:root{--bg:#0b1f14;--card:#0f2a1b;--text:#e7f4ec;--muted:#a3c7b7;--brand:#2bd07f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto}
+.header{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:#07160f;position:sticky;top:0}
+.logo{font-weight:800;color:var(--text);text-decoration:none}
+.nav a{color:var(--muted);margin-left:16px;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:20px}
+.breadcrumb{font-size:14px;color:var(--muted)}.breadcrumb a{color:var(--muted)}
+.hero{margin:16px 0;border-radius:14px;overflow:hidden;background:#000}
+.hero img{width:100%;display:block}
+.grid{display:grid;gap:24px}@media(min-width:820px){.grid{grid-template-columns:1.2fr 1fr}}
+.h1{margin:0 0 8px;font-size:34px}.h2{font-size:22px}
+.price{color:var(--brand);font-weight:800}
+.meta{list-style:none;padding:0;margin:16px 0;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap}
+.desc{margin:8px 0 12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--brand);color:#062313;text-decoration:none;font-weight:700;margin-right:10px}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid #1a4631}
+.related{margin:28px 0}
+.cards{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.card{display:block;background:var(--card);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--text)}
+.card img{width:100%;height:128px;object-fit:cover;display:block}
+.card span{display:block;padding:10px}
+.footer{padding:24px 20px;color:var(--muted)}
+.reviews p{margin:6px 0}
